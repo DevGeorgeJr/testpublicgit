@@ -1,0 +1,183 @@
+body {
+    background-color: #f8f8f8;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.gray li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+
+td {
+    padding: 10px;
+}
+.desc-name{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+    width: 30%;
+}
+
+
+.desc-def{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+}
+
+.main-container {
+    height: 100%;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 15% 25% 25% 25% auto;
+    grid-template-areas: 
+        'header header header'
+        'sect1 main aside'
+        'sect2 main aside'
+        'sect3 main aside'
+        'footer footer footer';
+}
+
+header {
+    grid-area: header;
+    background-color: #2f4858;
+}
+
+nav {
+    grid-area: menu;
+}
+
+section{
+    padding: 0px;
+    margin: 10px;
+    border: 2px solid #e1e2a4;
+    border-radius: 25px;
+}
+
+section#sect1 {
+    grid-area: sect1;
+    background-color: #B3D8FD;
+    background: url(assets/images/slicer_2.jpg);
+}
+
+section#sect2 {
+    grid-area: sect2;
+    background-color: #5E86AF;
+    background: url(assets/images/slicer_5.jpg);
+}
+
+section#sect3 {
+    grid-area: sect3;
+    background-color: #6D9FD2;
+    background: url(assets/images/slicer.jpg);
+}
+
+main {
+    grid-area: main;
+    margin: 10px 5px;
+}
+
+aside {
+    grid-area: aside;
+    padding: 0px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.u-list-title{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.u-list{
+    list-style: disc;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 10px;
+    text-align: left;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+#item-feature ul {
+    margin: 10px;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2f4858;
+    color: #ffffff;
+}
+
+.grid-container > * {
+    text-align: center;
+    font-size: 2em;
+}
+
+#item-feature{
+    height: 190px;
+    overflow: auto;
+}
+
+footer ul.horizontal {
+    /* float: right; */
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+footer ul.horizontal li.c-section{
+    font-family: "Montserrat";
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Common */
+
+ul.horizontal li.f-right{
+    float: right;
+    margin-right: 15px;
+}
+
+li.logo-section {
+    margin-right: 20px;
+}
+
+li img.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: -25px;
+}
